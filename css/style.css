@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: #f9f7f7;
+}
+ /* navigation */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 2rem 15px;
+    background-color: #080808d0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+ }
+ nav h1{
+    font-size: 35px;
+    color: rgb(200, 200, 110);
+    gap: 20px;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+nav a:hover{
+    color: rgb(200, 200, 110);
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
+ /* HOME section */
+.home{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    gap: 70px;
+    
+}
+.home .home-text h1{
+    font-size: 40px;
+    color: rgb(200, 200, 110)ld;
+    margin-bottom: 10px;
+}
+.home    span{
+    color: rgb(200, 200, 110);
+}
+.home h2{
+    color: #be9b9b;
+    margin-bottom: 20px;
+}
+.home p{
+    max-width: 600px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+ /* About me section */
+.about-me{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    gap: 70px;
+    
+}
+.about-me .about-me-text h1{
+    font-size: 40px;
+    color: rgb(200, 200, 110)ld;
+    margin-bottom: 10px;
+}
+.about-me    span{
+    color: rgb(200, 200, 110);
+}
+.about-me h2{
+    color: #be9b9b;
+    margin-bottom: 20px;
+}
+.about-me p{
+    max-width: 600px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+/* Profile  home */
+.profile-home{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.profile-home img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(200, 200, 110);
+    box-shadow: 0 0 30px rgba(200, 200, 110);
+    transition: all 0.3s ease-in-out;
+}
+.profile-home img:hover{
+    border: 2px solid rgb(294, 234, 15);
+    box-shadow: 0 0 30px rgba(600, 600, 410, 0.5); 
+    transition: all 0.3s ease-in-out;
+}
+.about-me .profile-home img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(200, 200, 110);
+    box-shadow: 0 0 30px rgba(200, 200, 110);
+    transition: all 0.3s ease-in-out;
+}
+
+/* profile about */
+.profile{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.profile img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(200, 200, 110);
+    box-shadow: 0 0 30px rgba(200, 200, 110);
+    transition: all 0.3s ease-in-out;
+}
+.profile img:hover{
+    border: 2px solid rgb(294, 234, 15);
+    box-shadow: 0 0 30px rgba(600, 600, 410, 0.5); 
+    transition: all 0.3s ease-in-out;
+}
+.about-me .profile img{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgb(200, 200, 110);
+    box-shadow: 0 0 30px rgba(200, 200, 110);
+    transition: all 0.3s ease-in-out;
+}
+.section-label{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+ /* buttons */
+
+ .home a{
+    padding: 12px 25px;
+    margin-right: 10px;
+    border: 2px solid rgb(200, 200, 110);
+    color: #111;
+    background-color: transparent;
+    background: rgb(200, 200, 110);
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 2px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    
+}
+.home  a:hover{
+    background: transparent;
+    color: rgb(200, 200, 110);scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-me a{
+    padding: 12px 25px;
+    margin-right: 10px;
+    border: 2px solid rgb(200, 200, 110);
+    color: #111;
+    background-color: transparent;
+    background: rgb(200, 200, 110);
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 2px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    
+}
+.about-me  a:hover{
+    background: transparent;
+    color: rgb(200, 200, 110);scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
+section{
+    padding: 100px 8%;
+}
+section h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+/*Skill section */
+
+.skill{
+    color: #07ef39;
+    min-height: 05vh;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: 1px solid rgb(200, 200, 110);
+    border-radius: 5px;
+    
+}
+ /* Projects section */
+
+.project-info{
+    display:inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: 1px solid rgb(200, 200, 110);
+    border-radius: 5px;
+    color: #07ef39;
+    text-align: center;
+    justify-content: center;
+    gap: 2.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-info p{
+    max-width: 600px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+.projects .project-info:hover{
+    background: transparent;
+    color: rgb(200, 200, 110);scale: 1.05;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(37, 36, 36, 0.511);
+    border: 2px solid rgb(200, 200, 110);
+   
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+
+}
+.contacts h4{
+    color: rgb(200, 200, 110);
+    margin-bottom: 10px;
+    text-align: center;
+    
+}
+.contacts h2 span{
+color: rgb(200, 200, 110);
+}
+.contacts .contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 50px;
+    text-align: left;
+}
+.contact-info{
+    padding: 30px;
+}
+.contact-info h3{
+    color: #aaa;
+    margin-bottom: 20px;
+}
+ /* form */
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+}
+
+
+.contacts button{
+    padding: 12px 25px;
+    margin-right: 10px;
+    border: 2px solid rgb(200, 200, 110);
+    color: #111;
+    background-color: transparent;
+    background: rgb(200, 200, 110);
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    margin: 2px 0;
+    transition: all 0.3s ease-in-out;
+}
+.contacts button:hover{
+    background: transparent;
+    color: rgb(200, 200, 110);
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
+.contacts a{
+    padding: 4px 15px;
+    margin-right: 10px;
+    border: 2px solid rgb(153, 110, 200);
+    color: #111;
+    background-color: transparent;
+    background: rgb(200, 200, 110);
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 2px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    
+}
+.contacts a:hover{
+    background: transparent;
+    color: rgb(251, 254, 254);
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
+.contacts a:focus{
+    background-color:rgb(66, 66, 58);
+    color: white;
+}
+footer{
+    text-align: center;
+    padding: 25px;
+    background-color: #111;
+    color: #e9e2e2;
+    
+}
+ /* hover */
+.about-me a:hover, .home a:hover, .contacts button:hover{
+    background: transparent;
+    color: rgb(252, 252, 255);
+    scale: 1.05;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* mobile */
+    @media(max-width: 768px){
+        .home{
+            flex-direction: column;
+            text-align: center;
+            padding: 60px;
+            width: 100%;     
+        }
+        .home a{
+            width: 80%;
+            max-width: 250px;
+            box-sizing: border-box;
+        }
+        .about-me{
+            flex-direction: column;
+            text-align: center;
+            padding: 60px;
+            width: 100%;     
+        }
+        .about-me a{
+            width: 80%;
+            max-width: 250px;
+            box-sizing: border-box;
+        }
+        .hero-text{
+            font-size: 40px;
+            display:inline-block;
+        }
+        .profile{
+            width: 250px;
+            height: 200px;
+            flex: 1;
+            
+        }
+        .skills{
+            grid-template-columns: 1fr;
+            justify-content: center;
+            text-align: center;
+        }
+        nav{
+            flex-direction: column;
+            gap: 15px;
+        }
+        nav ul{
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .home h2{
+            font-size: 30px;
+        }
+        .project-info p{
+            width: 100%;
+            margin: 10px 0 ;
+        }
+        .projects{
+            
+            justify-content: center;
+            text-align: center;
+        }
+        .projects .project-info{
+            display: block;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            text-align: center;
+            
+        }
+      
+    }

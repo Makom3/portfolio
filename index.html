@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- navigation -->
@@ -23,7 +23,7 @@
 <!-- Home Section -->
   <section class="home" id="home">
         <div    class="profile-home">
-            <img src="img/profile.png" alt="Solly's Profile Picture"   width="150" height="200">
+            <img src="https://res.cloudinary.com/txkpxwxm/image/upload/v1792687314/profile.png" alt="Solly's Profile Picture"   width="150" height="200">
         </div>
         <div id="home-text">
         <h1 class="section-label">Hey, it's <span>Solly</span></h1>
@@ -44,7 +44,7 @@
  <!-- About Me Section -->
     <section class="about-me" id="about-me">
         <div    class="profile">
-            <img src="img/profile.png" alt="Solly's Profile Picture"   width="150" height="200">
+            <img src="https://res.cloudinary.com/txkpxwxm/image/upload/v1792687314/profile.png" alt="Solly's Profile Picture"   width="150" height="200">
         </div>
         <div id="about-me-text">
         <h1 class="section-label">ABOUT ME</h1>
@@ -52,7 +52,7 @@
         <p>   I`m a web developer and creative designer who enjoys building  websites and creating digital designs
         </p>
         <p>
-            i`m currently developing my skills in HTML,CSS,JavaScript,Photography,Video Editing and Graphic Design.
+            i`m currently developing my skills in HTML,CSS,JavaScript,✔Photography,Video Editing and Graphic Design.
              I`m passionate about creating visually appealing and user-friendly websites that provide a seamless experience for users.
         </p>
         <div class="about-me-buttons" id="hero-text">
@@ -104,67 +104,77 @@
             <h3>My Projects</h3>
         
         <div class="project-info">
-            <img src="img/js-icon.png" alt="Project 1" width="100" height="100">
+            <img src="https://res.cloudinary.com/txkpxwxm/image/upload/v1792687311/website-icon.png" alt="Project 1" width="100" height="100">
             <h3>JavaScript Project</h3>
             <p>interactive Application createdd while learning JavaScript</p>
         </div>
   
         <div class="project-info">
-            <img src="img/website-icon.png" alt="Project 2" width="100" height="100">
+            <img src="https://res.cloudinary.com/txkpxwxm/image/upload/v1792687312/js-icon.png" alt="Project 2" width="100" height="100">
             <h3>Website Project</h3>
             <p>My first Portfolio Website</p>
         </div>
         <div class="project-info">
-            <img src="img/graphic-icon.png" alt="Project 3" width="100" height="100">
+            <img src="https://res.cloudinary.com/txkpxwxm/image/upload/v1792687313/graphic-icon.png" alt="Project 3" width="100" height="100">
             <h3>Graphic Design Project</h3>
             <p>Posters, Logos & Photo Editing</p>
         </div>
         <div class="project-info">
-            <img src="img/printing-logo.png" alt="Project 4" width="150" height="100">
+            <img src="https://res.cloudinary.com/txkpxwxm/image/upload/v1792687313/printing-logo.png" alt="Project 4" width="150" height="100">
             <h3>Photography & Branding</h3>
             <p>Branding & Identity Design, Photography/Videography</p>
         </div>
    </section>
 <!-- Contact Section -->
     <section class="contacts" id="contacts">
-        <h4>Contact Me </h4>
-        <h2> Let`s <span>Work Together</span></h2>
-
+        <p class="contact-eyebrow">CONTACT</p>
+        <h2>Let's <span>Work Together</span></h2>
         <div class="contact-container">
             <div class="contact-info">
-                <h3> Get In Touch</h3>
-                <p>
-                    Have a project  in mind? Feel free to contact me. I`d love to hear about it.
-                </p>
-                 <p>WhatsApp: 0713751901</p>
-                 <p>Email: makomematlakala@gmail.com</p>
-                 <p>Locaton South Africa</p>
+                <h3>Get in touch</h3>
+                <p>Have a project in mind? Tell me a little about it and I'll get back to you.</p>
+                <div class="contact-details">
+                    <a href="https://wa.me/27713751901" target="_blank" rel="noopener noreferrer">
+                        <span>WhatsApp</span>
+                        <span>0713751901</span>
+                    </a>
+                    <a href="mailto:makomematlakala@gmail.com">
+                        <span>Email</span>
+                        <span>makomematlakala@gmail.com</span>
+                    </a>
+                    <p><span>Location</span><span>South Africa</span></p>
+                </div>
+                <div class="social-media">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
             </div>
-
-            <form action="" class="contact-form">
-            <input type="text" placeholder="your name" required>
-            <input type="email" placeholder="your Email" required>
-            <input type="text" placeholder="Subject" required>
-            <textarea placeholder="Your message" rows="6" required>
-            </textarea>
-            <button type="submit" id="submit-button">Send Message</button>
-            </form>
-        </div>
-        <p>Feel free to reach out to me! Lets Work Together</p>
-        
-        <div class="social-media" id="social-media">
-            <a rel="noopener noreferrer" href="mailto:makomema@gmail.com" target="_blank" class="email-link">Email</a>
-            <a rel="noopener noreferrer" href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
-        </div>
+            <div class="form-container">
+                <h3>Send a message</h3>
+                <form class="form" method="post">
+                    <div class="form-group">
+                        <label for="name">Your name</label>
+                        <input required name="name" id="name" type="text" autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your email</label>
+                        <input required name="email" id="email" type="email" autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">How can I help?</label>
+                        <textarea required cols="50" rows="6" id="textarea" name="message"></textarea>
+                    </div>
+                    <button type="submit" class="form-submit-btn">Send message</button>
+                </form>
+            </div>
+        </div>        
     </section>
-
 <!-- footer section -->
     <footer>
     <p>&copy; 2026 My Portfolio. Ayse Creative Media..</p>
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
